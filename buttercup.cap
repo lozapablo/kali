@@ -1,4 +1,8 @@
 working
 working2
 working3
+<<<<<<< HEAD
 working5
+=======
+working4
+>>>>>>> error
